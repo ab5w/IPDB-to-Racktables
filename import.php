@@ -1,7 +1,8 @@
 <?php
 
 //   This script imports IPs and servers from our old inhouse database to 
-//   racktables.
+//   racktables. It converts the IP from PHP's long2ip() (which the IPDB)
+//   uses and then inserts it using MySQL's INET_ATON() which Racktables uses.
 //   
 //   Copyright (C) 2013 Craig Parker <craig@paragon.net.uk>
 //
